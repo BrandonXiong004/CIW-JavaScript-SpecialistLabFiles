@@ -10,11 +10,17 @@
 /******************************************************
 Define a function that takes arguments on function call
 ******************************************************/
-  
+  function argumentCall() {
+    alert("The function has been called with an argument: Welcome!")
+  }
 /******************************************************
 Define a function that takes returns a value
 ******************************************************/
-
+function returnValue() {
+    var valueInput;
+    valueInput = prompt("Please put input in.")
+    return valueInput;
+}
 //-->
 </script>
 
@@ -28,8 +34,8 @@ Define a function that takes returns a value
 <!-- Add an onclick event handler to call the function -->
 
 <form name="myForm">
-<input type="button" value="Call Function with arguments" /><br />
-<input type="button" value="Call Function with return" />
+<input type="button" value="Call Function with arguments" onclick="argumentCall();"/><br />
+<input type="button" value="Call Function with return" onclick="alert('The result is ' + returnValue() + '.')"/>
 </form>
 
 </body>
