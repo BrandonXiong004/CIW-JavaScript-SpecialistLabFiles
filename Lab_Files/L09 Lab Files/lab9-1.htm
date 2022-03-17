@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -22,7 +22,7 @@ function changeButton()
   }
   getTest();
 }
--->
+//-->
 </script>
 </head>
 
@@ -33,13 +33,13 @@ function changeButton()
 <p>Please select your favorite type of Web site:</p>
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
-<input id="b" type="radio" name="group1" value="B">B</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+<input id="radiobuttonYoutube" type="radio" name="group1" value="A">Youtube</input><br />
+<input id="radiobuttonKissanime" type="radio" name="group1" value="B">Kissanime</input><br />
+<input id="radiobuttonInstagram" type="radio" name="group1" value="C">Instagram</input><br />
 
 
 <script type="text/javascript">
-<!--
+//<!--
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -54,8 +54,17 @@ function getTest()
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
   }
+  if(radioButton == "Youtube") {
+    document.write("<p>Here's youtube for you to browse the best quality media videos!</p><a href=http://www.youtube.com>Youtube</a>");
+  }
+  if (radioButton == "Kissanime") {
+    document.write("<p>Here's kissanime for you to browse the best anime!</p><a href=http://www.kissanime.ru>Kissanime</a>");
+  }
+  if (radioButton == "Instagram") {
+    document.write("<p>Here's Instagram for social media!</p><a href=http://www.instagram.com>instagram</a>");
+  }
 }
--->
+//-->
 </script>
 
 <p>
